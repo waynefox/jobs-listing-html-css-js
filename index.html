@@ -6,34 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Normalize.css for css reset  -->
     <link rel="stylesheet" href="./styles/normalize-reset.css">
+
     <!-- Local css file -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/brands.min.css"
+        integrity="sha512-dBL5cY4qTt42J1cfabCHTYR7KMztyd+n4t2GhD6EH/MKWJIIHuEYckJ1nHEpTwIaiDkrjzbc6WyiSkdLP+3INQ=="
+        crossorigin="anonymous" />
+
     <title>Jobs Listing</title>
 </head>
 
 <body>
     <header class="header">
-        <!-- section for image only -->
+        <!-- section for background-image only -->
     </header>
     <div class="container">
-        <div class='card'>
+        <div class='card card--border-left'>
             <div class="card__img">
                 <img src="./images/photosnap.svg" alt="Photosnap">
             </div>
-            <div class="card__company">
-                <h3>Photosnap</h3>
-                <span>New!</span>
-                <span>Featured</span>
-            </div>
-            <div class="card__job-title">
-                <h1>Senior Frontend Developer</h1>
-            </div>
-            <div class="card__post-info">
-                <span>1d ago</span>
-                <span>.</span>
-                <span>Full Time</span>
-                <span>.</span>
-                <span>USA Only</span>
+            <div class="cards">
+                <div class="cards__company">
+                    <h3 class="cards__company--title">Photosnap</h3>
+                    <span class="cards__company--new">New!</span>
+                    <span class="cards__company--featured">Featured</span>
+                </div>
+                <div class="cards__job-title">
+                    <h1>Senior Frontend Developer</h1>
+                </div>
+                <div class="cards__post-info">
+                    <span>1d ago</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Full Time</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>USA Only</span>
+                </div>
             </div>
             <div class="card__seperator">
                 <hr>
@@ -45,7 +53,285 @@
                 <span>CSS</span>
                 <span>JavaScript</span>
             </div>
-
+        </div>
+        <!-- Manage -->
+        <div class='card card--border-left'>
+            <div class="card__img">
+                <img src="./images/manage.svg" alt="Manage">
+            </div>
+            <div class="cards">
+                <div class="cards__company">
+                    <h3 class="cards__company--title">Manage</h3>
+                    <span class="cards__company--new">New!</span>
+                    <span class="cards__company--featured">Featured</span>
+                </div>
+                <div class="cards__job-title">
+                    <h1>Fullstack Developer</h1>
+                </div>
+                <div class="cards__post-info">
+                    <span>1d ago</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Part Time</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Remote</span>
+                </div>
+            </div>
+            <div class="card__seperator">
+                <hr>
+            </div>
+            <div class="card__tags">
+                <span>Fullstack</span>
+                <span>Midweight</span>
+                <span>Python</span>
+                <span>React</span>
+            </div>
+        </div>
+        <!-- Account -->
+        <div class='card'>
+            <div class="card__img">
+                <img src="./images/account.svg" alt="Account">
+            </div>
+            <div class="cards">
+                <div class="cards__company">
+                    <h3 class="cards__company--title">Manage</h3>
+                    <span class="cards__company--new">New!</span>
+                </div>
+                <div class="cards__job-title">
+                    <h1>Junior Frontend Developer</h1>
+                </div>
+                <div class="cards__post-info">
+                    <span>2d ago</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Part Time</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>USA Only</span>
+                </div>
+            </div>
+            <div class="card__seperator">
+                <hr>
+            </div>
+            <div class="card__tags">
+                <span>Frontend</span>
+                <span>Junior</span>
+                <span>React</span>
+                <span>Sass</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
+        <!-- MyHome -->
+        <div class='card'>
+            <div class="card__img">
+                <img src="./images/myhome.svg" alt="MyHome">
+            </div>
+            <div class="cards">
+                <div class="cards__company">
+                    <h3 class="cards__company--title">Manage</h3>
+                </div>
+                <div class="cards__job-title">
+                    <h1>Junior Frontend Developer</h1>
+                </div>
+                <div class="cards__post-info">
+                    <span>5d ago</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Contract</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>USA Only</span>
+                </div>
+            </div>
+            <div class="card__seperator">
+                <hr>
+            </div>
+            <div class="card__tags">
+                <span>Frontend</span>
+                <span>Junior</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
+        <!--Loop Studios -->
+        <div class='card'>
+            <div class="card__img">
+                <img src="./images/loop-studios.svg" alt="Loop-studios">
+            </div>
+            <div class="cards">
+                <div class="cards__company">
+                    <h3 class="cards__company--title">Loop-Studios</h3>
+                </div>
+                <div class="cards__job-title">
+                    <h1>Software Engineer</h1>
+                </div>
+                <div class="cards__post-info">
+                    <span>1w ago</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Full Time</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Worldwide</span>
+                </div>
+            </div>
+            <div class="card__seperator">
+                <hr>
+            </div>
+            <div class="card__tags">
+                <span>Fullstack</span>
+                <span>Midweight</span>
+                <span>JavaScript</span>
+                <span>Sass</span>
+                <span>Ruby</span>
+            </div>
+        </div>
+        <!-- FaceIt -->
+        <div class='card'>
+            <div class="card__img">
+                <img src="./images/faceit.svg" alt="FaceIt">
+            </div>
+            <div class="cards">
+                <div class="cards__company">
+                    <h3 class="cards__company--title">FaceIt</h3>
+                </div>
+                <div class="cards__job-title">
+                    <h1>Junior Backend Developer</h1>
+                </div>
+                <div class="cards__post-info">
+                    <span>2w ago</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Full Time</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Uk Only</span>
+                </div>
+            </div>
+            <div class="card__seperator">
+                <hr>
+            </div>
+            <div class="card__tags">
+                <span>Backend</span>
+                <span>Junior</span>
+                <span>Ruby</span>
+                <span>RoR</span>
+            </div>
+        </div>
+        <!-- Shortly -->
+        <div class='card'>
+            <div class="card__img">
+                <img src="./images/shortly.svg" alt="Shortly">
+            </div>
+            <div class="cards">
+                <div class="cards__company">
+                    <h3 class="cards__company--title">Shortly</h3>
+                </div>
+                <div class="cards__job-title">
+                    <h1>Junior Developer</h1>
+                </div>
+                <div class="cards__post-info">
+                    <span>2w ago</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Full Time</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Worldwide</span>
+                </div>
+            </div>
+            <div class="card__seperator">
+                <hr>
+            </div>
+            <div class="card__tags">
+                <span>Frontend</span>
+                <span>Junior</span>
+                <span>HTML</span>
+                <span>Sass</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
+        <!-- Insure -->
+        <div class='card'>
+            <div class="card__img">
+                <img src="./images/insure.svg" alt="Insure">
+            </div>
+            <div class="cards">
+                <div class="cards__company">
+                    <h3 class="cards__company--title">Insure</h3>
+                </div>
+                <div class="cards__job-title">
+                    <h1>Junior Frontend Developer</h1>
+                </div>
+                <div class="cards__post-info">
+                    <span>2w ago</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Full Time</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>USA Only</span>
+                </div>
+            </div>
+            <div class="card__seperator">
+                <hr>
+            </div>
+            <div class="card__tags">
+                <span>Frontend</span>
+                <span>Junior</span>
+                <span>Vue</span>
+                <span>JavaScript</span>
+                <span>Sass</span>
+            </div>
+        </div>
+        <!-- Eyecan Co. -->
+        <div class='card'>
+            <div class="card__img">
+                <img src="./images/eyecam-co.svg" alt="EyeCam Co">
+            </div>
+            <div class="cards">
+                <div class="cards__company">
+                    <h3 class="cards__company--title">Eyecam Co.</h3>
+                </div>
+                <div class="cards__job-title">
+                    <h1>Full Stack Developer</h1>
+                </div>
+                <div class="cards__post-info">
+                    <span>3w ago</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Full Time</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Worldwide</span>
+                </div>
+            </div>
+            <div class="card__seperator">
+                <hr>
+            </div>
+            <div class="card__tags">
+                <span>Fullstack</span>
+                <span>Midweight</span>
+                <span>JavaScript</span>
+                <span>Django</span>
+                <span>Python</span>
+            </div>
+        </div>
+        <!-- The Air Filter Company -->
+        <div class='card'>
+            <div class="card__img">
+                <img src="./images/the-air-filter-company.svg" alt="The Air Filter Company">
+            </div>
+            <div class="cards">
+                <div class="cards__company">
+                    <h3 class="cards__company--title">The Air Filter Company</h3>
+                </div>
+                <div class="cards__job-title">
+                    <h1>Front-end Dev</h1>
+                </div>
+                <div class="cards__post-info">
+                    <span>1m ago</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Part Time</span>
+                    <span class="cards__post-info--dot"></span>
+                    <span>Worldwide</span>
+                </div>
+            </div>
+            <div class="card__seperator">
+                <hr>
+            </div>
+            <div class="card__tags">
+                <span>Frontend</span>
+                <span>Junior</span>
+                <span>React</span>
+                <span>Sass</span>
+                <span>JavaScript</span>
+            </div>
         </div>
     </div>
     <script src="./js/script.js"></script>
